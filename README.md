@@ -26,15 +26,12 @@ function request(url, type = 'GET', data = {}) {
 
 // 下面是request的使用示例
 export default {
-  register(username, password) {
-    return request('/auth/register', 'POST', {username, password})
-  },
-  login(username, password) {
-    return request('/auth/login', 'POST', {username, password})
-  },
-  logout() {
-    return request('/auth/logout')
-  }
+    login(username, password) {
+        return request('/auth/login', 'POST', {username, password})
+    },
+    get_user_info() {
+        return request('/auth/get_user_info')
+    }
 }
 ```
 
